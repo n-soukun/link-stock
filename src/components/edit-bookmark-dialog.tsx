@@ -41,7 +41,7 @@ export const EditBookmarkDialog: React.FC<EditBookmarkDialogProps> = ({
         type: "success",
       });
       router.refresh();
-      getBookmarkQuery.refetch();
+      void getBookmarkQuery.refetch();
     },
     onError: (error) => {
       toast.add({

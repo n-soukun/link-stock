@@ -22,12 +22,10 @@ import { Spinner } from "~/components/ui/spinner";
 import { toast } from "~/components/ui/toast";
 
 import { BookmarkForm, type BookmarkFormValues } from "./bookmark-form";
-import { useState, type JSXElementConstructor, type ReactElement } from "react";
+import { useState, type ReactElement } from "react";
 
 export interface CreateBookmarkDialogProps {
-  children?:
-    | ReactElement<unknown, string | JSXElementConstructor<any>>
-    | ComponentRenderFn<HTMLProps, DialogTriggerState>;
+  children?: ReactElement | ComponentRenderFn<HTMLProps, DialogTriggerState>;
 }
 
 export const CreateBookmarkDialog: React.FC<CreateBookmarkDialogProps> = ({

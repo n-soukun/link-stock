@@ -49,7 +49,7 @@ export const BookmarkForm: React.FC<BookmarkFormProps> = ({
       id={id ?? "bookmark-form"}
       onSubmit={(e) => {
         e.preventDefault();
-        form.handleSubmit();
+        void form.handleSubmit();
       }}
     >
       <FieldGroup>

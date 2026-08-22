@@ -20,11 +20,11 @@ export interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ user }) => {
   const handleLogin = () => {
-    signIn("discord", { callbackUrl: "/" });
+    void signIn("discord", { callbackUrl: "/" });
   };
 
   const handleLogout = () => {
-    signOut({ callbackUrl: "/" });
+    void signOut({ callbackUrl: "/" });
   };
 
   return (
